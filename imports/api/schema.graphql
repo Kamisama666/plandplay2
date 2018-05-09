@@ -1,0 +1,48 @@
+type Message {
+  id: ID
+  content: String!
+  user_id: ID!
+}
+
+type Game {
+  _id: ID!
+  title: String!
+  game_name: String!
+  description: String
+  image_url: String
+  starting_time: String!
+  duration_hours: Int!
+  maximum_number_players: Int
+  approved: Boolean!
+  open_signups: Boolean!
+  full: Boolean!
+  owner: ID!
+  registered_players: [ID!]
+  waitlist_players: [ID!]
+  tags: [ID!]
+  messages: [Message]
+}
+
+type Query {
+  gameById(_id: ID): Game
+  games: [Game]
+}
+
+input GameInput {
+  title: String!
+  game_name: String!
+  description: String
+  image_url: String
+  starting_time: String!
+  duration_hours: Int!
+  maximum_number_players: Int
+  approved: Boolean!
+  open_signups: Boolean!
+  full: Boolean!
+  owner: ID!
+}
+
+type Mutation {
+  addGame(game: GameInput!): Game
+  updateGame(_id: ID!, game: GameInput!): Game
+}

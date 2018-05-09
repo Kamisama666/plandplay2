@@ -1,0 +1,33 @@
+{
+  "name": "plandplay",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "apollo-client": "^2.3.1",
+    "apollo-server-express": "^1.3.6",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "graphql": "^0.12.3",
+    "graphql-server-express": "^1.3.6",
+    "graphql-tools": "^2.24.0",
+    "meteor-node-stubs": "^0.3.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "simpl-schema": "^1.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.0",
+    "babel-core": "6.24.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-rewire": "1.0.0",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "6.24.0",
+    "babel-preset-meteor": "6.24.2",
+    "babel-register": "6.24.0",
+    "babelify": "7.3.0"
+  }
+}
